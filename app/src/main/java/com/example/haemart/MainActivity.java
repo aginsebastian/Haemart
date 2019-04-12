@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         String JSON_STRING;
         @Override
         protected void onPreExecute() {
-            json_url="https://aginsebastian.000webhostapp.com/dat1.php";
+            json_url="https://aginsebastian.000webhostapp.com/get4.php";
         }
 
         @Override
