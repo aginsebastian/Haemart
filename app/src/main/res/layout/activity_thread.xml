@@ -4,11 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E4F44336"
     tools:context=".ThreadActivity">
 
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Insert Thread Button -->
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_signup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="#F53131"
+            android:padding="12dp"
+            android:text="Add Thread"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rw"
+        android:layout_marginTop="70dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </RelativeLayout>

@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ProfileActivity"></activity>
+        <activity android:name=".NewThreadActivity"></activity>
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".ProfileActivity" />
         <activity android:name=".NearbyActivity" />
         <activity android:name=".AcceptedRequestActivity" />
         <activity android:name=".RaisedRequestActivity" />

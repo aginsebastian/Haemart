@@ -1,87 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E4F44336"
     tools:context=".HomeActivity">
 
-    <Button
-        android:id="@+id/thread"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:background="@color/cardview_light_background"
-        android:text="Thread"
-        app:layout_constraintEnd_toStartOf="@+id/events"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingTop="24dp"
+        android:paddingRight="24dp">
 
-    <Button
-        android:id="@+id/events"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:background="@color/cardview_light_background"
-        android:text="Events"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <!-- Thread Button -->
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/thread"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="24dp"
+            android:background="#F53131"
+            android:padding="12dp"
+            android:text="Thread"
+            android:textColor="#FFFFFF" />
 
-    <Button
-        android:id="@+id/map"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="8dp"
-        android:background="@color/cardview_light_background"
-        android:text="Map"
-        app:layout_constraintEnd_toStartOf="@+id/profile"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/thread" />
+        <!-- Event Button -->
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/events"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="24dp"
+            android:background="#F53131"
+            android:padding="12dp"
+            android:text="Event"
+            android:textColor="#FFFFFF" />
 
-    <Button
-        android:id="@+id/profile"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginEnd="8dp"
-        android:background="@color/cardview_light_background"
-        android:text="Profile"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/events" />
+        <!-- Map Button -->
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/map"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="24dp"
+            android:background="#F53131"
+            android:padding="12dp"
+            android:text="Map"
+            android:textColor="#FFFFFF" />
 
-    <Button
-        android:id="@+id/raisedrq"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="8dp"
-        android:background="@color/cardview_light_background"
-        android:text="Raised Request"
-        app:layout_constraintEnd_toStartOf="@+id/acceptedrq"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/map" />
+        <!-- Profile Button -->
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/profile"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="24dp"
+            android:background="#F53131"
+            android:padding="12dp"
+            android:text="Profile"
+            android:textColor="#FFFFFF" />
 
-    <Button
-        android:id="@+id/acceptedrq"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginEnd="8dp"
-        android:background="@color/cardview_light_background"
-        android:text="Accepted Request"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profile" />
+        <!-- Raised Request Button -->
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/raisedrq"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="24dp"
+            android:background="#F53131"
+            android:padding="12dp"
+            android:text="Raised Request"
+            android:textColor="#FFFFFF" />
 
-    <Button
-        android:id="@+id/nearbyhp"
-        android:layout_width="190dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@color/cardview_light_background"
-        android:text="Nearby Hospital"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/raisedrq" />
-</android.support.constraint.ConstraintLayout>
+        <!-- Accepted Request Button -->
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/acceptedrq"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="24dp"
+            android:background="#F53131"
+            android:padding="12dp"
+            android:text="Accepted Request"
+            android:textColor="#FFFFFF" />
+
+        <!-- Nearby Hospital Button -->
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/nearbyhp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="24dp"
+            android:background="#F53131"
+            android:padding="12dp"
+            android:text="Nearby Hospital"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+
+</ScrollView>
